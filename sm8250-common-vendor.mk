@@ -304,7 +304,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libminksocket \
-    libmmosal \
+    libmmosal_vendor \
     libmulawdec \
     libnetmgr \
     libnetmgr_common \
@@ -450,10 +450,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0-vendor \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
-    vendor.qti.hardware.qteeconnector@1.0-vendor \
+    vendor.qti.hardware.qteeconnector@1.0_vendor \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
@@ -490,7 +490,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.wifidisplaysession@1.0-vendor \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
@@ -500,14 +500,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig@2.0 \
     vendor.qti.ims.rcsconfig@2.1 \
     vendor.qti.imsrtpservice@3.0-service-Impl \
-    vendor.qti.imsrtpservice@3.0-vendor \
+    vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.power.pasrmanager@1.0 \
     vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0-vendor \
+    vendor.qti.qspmhal@1.0_vendor \
     vendor.qti.voiceprint@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     libFileMux_proprietary \
@@ -545,7 +545,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrcinterface_proprietary \
     libwfdutils_proprietary \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
-    com.qualcomm.qti.dpm.api@1.0-vendor \
+    com.qualcomm.qti.dpm.api@1.0_vendor \
     deviceInfoServiceModule \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
@@ -692,6 +692,7 @@ PRODUCT_PACKAGES += \
     libdpmframework \
     libdpmtcm \
     libfm-hci \
+    libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
