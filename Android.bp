@@ -1556,48 +1556,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession@1.0-impl",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.power.pasrmanager@1.0-impl",
     owner: "lge",
     strip: {
@@ -14925,50 +14883,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-    stem: "vendor.qti.hardware.wifidisplaysession@1.0",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.ims.callcapability@1.0",
     owner: "lge",
     strip: {
@@ -16791,6 +16705,35 @@ cc_prebuilt_library_shared {
                 "libmmosal_vendor",
                 "liblog",
                 "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+    stem: "vendor.qti.hardware.wifidisplaysession@1.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -20488,96 +20431,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwfd_remoteif",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfd_remoteif.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfd_remoteif.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdavenhancements",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdavenhancements.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libutils",
-                "libgui",
-                "libui",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdavenhancements.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libutils",
-                "libgui",
-                "libui",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwfdclient",
     owner: "lge",
     strip: {
@@ -20780,6 +20633,8 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "vendor.display.config@2.0",
                 "libdisplayconfig.system.qti",
+                "libbinder_ndk",
+                "vendor.qti.hardware.display.config-V5-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -20797,6 +20652,8 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "vendor.display.config@2.0",
                 "libdisplayconfig.system.qti",
+                "libbinder_ndk",
+                "vendor.qti.hardware.display.config-V5-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -20932,77 +20789,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwfdmmsrc_system",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdmmsrc_system.so",
-            ],
-            shared_libs: [
-                "libgui_shim",
-                "libbinder",
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libgui",
-                "libui",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libinput",
-                "libwfdmminterface",
-                "libwfddisplayconfig",
-                "libmedia_helper",
-                "libaudioclient",
-                "libwfdavenhancements",
-                "libqdMetaData.system",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdmmsrc_system.so",
-            ],
-            shared_libs: [
-                "libgui_shim",
-                "libbinder",
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libgui",
-                "libui",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libinput",
-                "libwfdmminterface",
-                "libwfddisplayconfig",
-                "libmedia_helper",
-                "libaudioclient",
-                "libwfdavenhancements",
-                "libqdMetaData.system",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwfdrtsp",
     owner: "lge",
     strip: {
@@ -21038,77 +20824,6 @@ cc_prebuilt_library_shared {
                 "libwfdcommonutils",
                 "libwfdconfigutils",
                 "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdservice",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdservice.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libgui",
-                "libwfdsinksm",
-                "libmmosal",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libinput",
-                "libwfdmminterface",
-                "libmedia_helper",
-                "libaudioclient",
-                "libwfdmmsrc_system",
-                "libwfdavenhancements",
-                "libhidlbase",
-                "vendor.qti.hardware.wifidisplaysession@1.0",
-                "libwfd_remoteif",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdservice.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libgui",
-                "libwfdsinksm",
-                "libmmosal",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libinput",
-                "libwfdmminterface",
-                "libmedia_helper",
-                "libaudioclient",
-                "libwfdmmsrc_system",
-                "libwfdavenhancements",
-                "libhidlbase",
-                "vendor.qti.hardware.wifidisplaysession@1.0",
-                "libwfd_remoteif",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -21595,49 +21310,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession@1.0",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.qspmhal@1.0",
     owner: "lge",
     strip: {
@@ -21690,6 +21362,151 @@ cc_prebuilt_library_shared {
         android_arm: {
             srcs: [
                 "proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdavenhancements",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libwfdavenhancements.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "libgui",
+                "libui",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmmsrc_system",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libwfdmmsrc_system.so",
+            ],
+            shared_libs: [
+                "libgui_shim",
+                "libbinder",
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libgui",
+                "libui",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libinput",
+                "libwfdmminterface",
+                "libwfddisplayconfig",
+                "libmedia_helper",
+                "libaudioclient",
+                "libwfdavenhancements",
+                "libhidlbase",
+                "libgralloctypes",
+                "android.hardware.graphics.mapper@4.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdservice",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libwfdservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libgui",
+                "libwfdsinksm",
+                "libmmosal",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libinput",
+                "libwfdmminterface",
+                "libmedia_helper",
+                "libaudioclient",
+                "libaudiofoundation",
+                "audioclient-types-aidl-cpp",
+                "android.media.audio.common.types-V4-cpp",
+                "libwfdmmsrc_system",
+                "libwfdavenhancements",
+                "libhidlbase",
+                "vendor.qti.hardware.wifidisplaysession@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession@1.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -21828,13 +21645,15 @@ cc_prebuilt_library_shared {
                 "libandroid_runtime",
                 "libui",
                 "libinput",
+                "libbinder",
+                "libgui",
                 "libnativehelper",
                 "libutils",
                 "liblog",
                 "libwfdclient",
                 "libhidlbase",
                 "libhidlmemory",
-                "android.hidl.base@1.0",
+                "libhidlbase",
                 "android.hidl.token@1.0-utils",
                 "android.hardware.graphics.common@1.0",
                 "android.hardware.graphics.bufferqueue@1.0",
@@ -24553,40 +24372,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wfdservice64",
-    owner: "lge",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/wfdservice64",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libwfdservice",
-                "libmmosal",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     strip: {
         none: true,
     },

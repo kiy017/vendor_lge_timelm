@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sm8250-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/lge/sm8250-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/lge/sm8250-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
-    vendor/lge/sm8250-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/lge/sm8250-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/lge/sm8250-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/lge/sm8250-common/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
@@ -191,7 +190,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    vendor.qti.hardware.wifidisplaysession@1.0-impl \
     vendor.qti.power.pasrmanager@1.0-impl \
     vulkan.adreno \
     lgdatavendorlib \
@@ -484,7 +482,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
@@ -538,6 +535,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_proprietary \
     libwfduibcsrcinterface_proprietary \
     libwfdutils_proprietary \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     deviceInfoServiceModule \
@@ -685,17 +683,13 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder \
     libseccam-ipc \
     libseccam \
-    libwfd_remoteif \
-    libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
     libwfdconfigutils \
     libwfddisplayconfig \
     libwfdmminterface \
     libwfdmmsink \
-    libwfdmmsrc_system \
     libwfdrtsp \
-    libwfdservice \
     libwfdsinksm \
     libwfduibcinterface \
     libwfduibcsink \
@@ -706,9 +700,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.seccam@1.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.qspmhal@1.0 \
     com.qualcomm.qti.wifidisplayhal@1.0 \
+    libwfdavenhancements \
+    libwfdmmsrc_system \
+    libwfdservice \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
     libaptXHD_encoder \
     libaptX_encoder \
     libimscamera_jni \
@@ -813,8 +810,7 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     xtwifi-inet-agent \
     dpmd \
-    wfdservice \
-    wfdservice64
+    wfdservice
 
 PRODUCT_PACKAGES += \
     vendor_lib_libEGL_adreno_so \
