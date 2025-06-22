@@ -177,6 +177,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
+    audio.primary.kona \
     com.dsi.ant@1.0-impl \
     sound_trigger.primary.kona \
     vendor.lge.hardware.vss_ims@1.0-impl \
