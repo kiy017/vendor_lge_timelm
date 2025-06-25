@@ -1367,8 +1367,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
-    libaptXHD_encoder \
-    libaptX_encoder \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
