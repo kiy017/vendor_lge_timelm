@@ -1030,7 +1030,6 @@ PRODUCT_PACKAGES += \
     cdsprpcd \
     cnd \
     cnss-daemon \
-    cpfirmware \
     dpmQmiMgr \
     dspservice \
     fm_qsoc_patches \

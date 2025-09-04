@@ -22343,33 +22343,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "cpfirmware",
-    owner: "lge",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/cpfirmware",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "dpmQmiMgr",
     owner: "lge",
     target: {
