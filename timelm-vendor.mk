@@ -312,7 +312,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.1 \
     btaudio_offload_if \
     audio.primary.kona \
-    sound_trigger.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     libDxHdcp \
     libFileMux_proprietary \
