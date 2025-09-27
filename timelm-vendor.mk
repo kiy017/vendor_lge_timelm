@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/lge/timelm/proprietary/vendor/etc/camera/auxpackagelist.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/auxpackagelist.txt \
     vendor/lge/timelm/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/lge/timelm/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/lge/timelm/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
@@ -120,32 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/lge/timelm/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/lge/timelm/proprietary/vendor/etc/qdcm_calib_data_SW43103_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW43103_cmd_mode_dsc_dsi_panel.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/196608/morpheus3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/196608/morpheus3.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/196608/morpheus3_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/196608/morpheus3_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/196608/morpheus3_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/196608/morpheus3_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/262144/oracle.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/262144/oracle.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/262144/oracle_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/262144/oracle_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/262144/oracle_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/262144/oracle_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/2/65536/mtp865.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/2/65536/mtp865.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/2/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/2/65536/mtp865_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/356/2/65536/mtp865_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/2/65536/mtp865_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/371/10/65536/sheldon.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/371/10/65536/sheldon.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/371/10/65536/sheldon_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/371/10/65536/sheldon_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/371/10/65536/sheldon_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/371/10/65536/sheldon_qvr_3dof_tracker_config.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/371/11/65536/merlin.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/371/11/65536/merlin.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/cfg/371/11/65536/merlin_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/371/11/65536/merlin_6dof_config.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
-    vendor/lge/timelm/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/lge/timelm/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
@@ -216,8 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan.elf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch0.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch0.elf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch1.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch1.elf \
-    vendor/lge/timelm/proprietary/vendor/etc/wifi/PerProviderSubscription.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/PerProviderSubscription.conf \
-    vendor/lge/timelm/proprietary/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/icudt53l.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icudt53l.dat \
