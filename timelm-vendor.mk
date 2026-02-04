@@ -87,7 +87,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.lge.hardware.lgdata@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.lgdata@1.1-service.rc \
-    vendor/lge/timelm/proprietary/vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.lge.hardware.vss_ims@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.vss_ims@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -595,7 +594,6 @@ PRODUCT_PACKAGES += \
     libembmsservice \
     libets_teeclient_v2 \
     libfilm_emulation_hal \
-    libfpsph \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -722,7 +720,6 @@ PRODUCT_PACKAGES += \
     libtrustedapploader \
     libtzdrmgenprov \
     libuicc_vendor \
-    libvendor_rescontrol \
     libvss_common_idl \
     libvss_common_iface \
     libvss_dmi_qcci \
@@ -758,8 +755,6 @@ PRODUCT_PACKAGES += \
     vendor.lge.hardware.cameraex@1.0 \
     vendor.lge.hardware.lgdata@1.0 \
     vendor.lge.hardware.lgdata@1.1 \
-    vendor.lge.hardware.powerhint.rescontrol@2.0-common \
-    vendor.lge.hardware.powerhint.rescontrol@2.0 \
     vendor.lge.hardware.radio@2.0_vendor \
     vendor.lge.hardware.sensors@1.0 \
     vendor.lge.hardware.vss_ims@1.0 \
@@ -952,7 +947,6 @@ PRODUCT_PACKAGES += \
     qcrild \
     vendor.display.color@1.0-service \
     vendor.lge.hardware.lgdata@1.1-service \
-    vendor.lge.hardware.powerhint.rescontrol@2.0-service \
     vendor.lge.hardware.vss_ims@1.0-service \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
