@@ -184,6 +184,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/firmware/a650_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.b02 \
     vendor/lge/timelm/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/lge/timelm/proprietary/vendor/firmware/a650_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.mdt \
+    vendor/lge/timelm/proprietary/vendor/firmware/cxd225x_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd225x_firmware.bin \
     vendor/lge/timelm/proprietary/vendor/firmware/htbtfw20.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/htbtfw20.tlv \
     vendor/lge/timelm/proprietary/vendor/firmware/htnv20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/htnv20.bin \
     vendor/lge/timelm/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
@@ -939,6 +940,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
+    android.hardware.nfc@1.2-service-cxd22xx \
     qcrild \
     vendor.display.color@1.0-service \
     vendor.lge.hardware.lgdata@1.1-service \
