@@ -173,13 +173,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/thermal-engine-8250.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8250.conf \
     vendor/lge/timelm/proprietary/vendor/etc/thermal-engine-default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-default.conf \
     vendor/lge/timelm/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/lge/timelm/proprietary/vendor/etc/wifi/Diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/Diag.cfg \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan.elf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch0.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch0.elf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch1.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch1.elf \
-    vendor/lge/timelm/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
-    vendor/lge/timelm/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
-    vendor/lge/timelm/proprietary/vendor/etc/wifi/icudt53l.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icudt53l.dat \
     vendor/lge/timelm/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/lge/timelm/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/lge/timelm/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
