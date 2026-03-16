@@ -172,7 +172,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lge/timelm/proprietary/vendor/etc/thermal-engine-8250.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8250.conf \
     vendor/lge/timelm/proprietary/vendor/etc/thermal-engine-default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-default.conf \
-    vendor/lge/timelm/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan.elf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch0.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch0.elf \
     vendor/lge/timelm/proprietary/vendor/etc/wifi/GLOBAL/bdwlan_ch1.elf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/GLOBAL/bdwlan_ch1.elf \
