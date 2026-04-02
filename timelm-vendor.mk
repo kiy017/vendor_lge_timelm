@@ -243,7 +243,6 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     libmdsprpc \
-    libmmosal_vendor \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -631,6 +630,7 @@ PRODUCT_PACKAGES += \
     libminksocket \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
+    libmmosal_vendor \
     libmorpho_image_stab31 \
     libmpbase \
     libnetmgr \
@@ -891,9 +891,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_sm_fluence_sb_module_so_1 \
     vendor_lib_rfsa_adsp_smecns_v2_module_fv9_so_1 \
     libdiag_system \
-    libmmosal \
     vendor.qti.diaghal@1.0 \
-    libmmparser_lite \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     libdpmctmgr \
@@ -903,6 +901,8 @@ PRODUCT_PACKAGES += \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmosal \
+    libmmparser_lite \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     CneApp \
