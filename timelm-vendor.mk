@@ -267,6 +267,7 @@ PRODUCT_PACKAGES += \
     btaudio_offload_if \
     audio.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
