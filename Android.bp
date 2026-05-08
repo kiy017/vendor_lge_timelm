@@ -304,124 +304,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.capabilityconfigstore@1.0-impl",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "libxml2",
-                "vendor.qti.hardware.capabilityconfigstore@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "libxml2",
-                "vendor.qti.hardware.capabilityconfigstore@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vulkan.adreno",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vulkan.adreno.so",
-            ],
-            shared_libs: [
-                "libadreno_utils",
-                "libgsl",
-                "libz",
-                "liblog",
-                "libllvm-glnext",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
-                "vendor.qti.hardware.display.mapper@2.0",
-                "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "android.hardware.graphics.mapper@3.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libhidlbase",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vulkan.adreno.so",
-            ],
-            shared_libs: [
-                "libadreno_utils",
-                "libgsl",
-                "libz",
-                "liblog",
-                "libllvm-glnext",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
-                "vendor.qti.hardware.display.mapper@2.0",
-                "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "android.hardware.graphics.mapper@3.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libhidlbase",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libC2D2",
     owner: "lge",
     strip: {
@@ -637,55 +519,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libadsprpc",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libadsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libadsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libc2d30_bltlib",
     owner: "lge",
     strip: {
@@ -727,94 +560,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcdsp_default_listener",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcdsp_default_listener.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcdsp_default_listener.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcdsprpc",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcdsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcdsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdiag",
     owner: "lge",
     strip: {
@@ -843,88 +588,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libcutils",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfastcvdsp_stub",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libfastcvdsp_stub.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfastcvdsp_stub.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfastcvopt",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libfastcvopt.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libfastcvdsp_stub",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfastcvopt.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libfastcvdsp_stub",
-                "libcdsprpc",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -1020,43 +683,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhta_hexagon_runtime",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhta_hexagon_runtime.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhta_hexagon_runtime.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libllvm-glnext",
     owner: "lge",
     strip: {
@@ -1131,663 +757,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmdsprpc",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmdsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmdsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveCommon",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libscveCommon.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libscveCommon_stub",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveCommon.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libscveCommon_stub",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveCommon_stub",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libscveCommon_stub.so",
-            ],
-            shared_libs: [
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveCommon_stub.so",
-            ],
-            shared_libs: [
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectSegmentation",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libscveObjectSegmentation.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libfastcvopt",
-                "libscveCommon",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectSegmentation.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libfastcvopt",
-                "libscveCommon",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectSegmentation_stub",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libscveObjectSegmentation_stub.so",
-            ],
-            shared_libs: [
-                "libscveCommon",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectSegmentation_stub.so",
-            ],
-            shared_libs: [
-                "libscveCommon",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectTracker",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libscveObjectTracker.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libfastcvopt",
-                "libscveCommon",
-                "libscveObjectSegmentation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectTracker.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libfastcvopt",
-                "libscveCommon",
-                "libscveObjectSegmentation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectTracker_stub",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libscveObjectTracker_stub.so",
-            ],
-            shared_libs: [
-                "libfastcvopt",
-                "liblog",
-                "libscveCommon",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectTracker_stub.so",
-            ],
-            shared_libs: [
-                "libfastcvopt",
-                "liblog",
-                "libscveCommon",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdsprpc",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsdsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsysmon_cdsp_skel",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsysmon_cdsp_skel.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsysmon_cdsp_skel.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libthermalclient",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libthermalclient.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libthermalclient.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtime_genoff",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libtime_genoff.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtime_genoff.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvppclient",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvppclient.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libhwbinder",
-                "libutils",
-                "libhardware",
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "vendor.qti.hardware.vpp@1.3",
-                "libvpplibrary",
-                "libcutils",
-                "libqdMetaData",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvppclient.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libhwbinder",
-                "libutils",
-                "libhardware",
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "vendor.qti.hardware.vpp@1.3",
-                "libvpplibrary",
-                "libcutils",
-                "libqdMetaData",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpphcp",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvpphcp.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvpphcp.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpphvx",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvpphvx.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvpphvx.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpplibrary",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvpplibrary.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "vendor.qti.hardware.capabilityconfigstore@1.0",
-                "libcutils",
-                "liblog",
-                "libqdMetaData",
-                "libion",
-                "libvpphvx",
-                "libcdsprpc",
-                "libvpphcp",
-                "libC2D2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvpplibrary.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "vendor.qti.hardware.capabilityconfigstore@1.0",
-                "libcutils",
-                "liblog",
-                "libqdMetaData",
-                "libion",
-                "libvpphvx",
-                "libcdsprpc",
-                "libvpphcp",
-                "libC2D2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libxml",
     owner: "lge",
     strip: {
@@ -1815,272 +784,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libdiag",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.dsp@1.0",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vpp@1.1",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vpp@1.2",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.qti.hardware.vpp@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.qti.hardware.vpp@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vpp@1.3",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so",
-            ],
-            shared_libs: [
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so",
-            ],
-            shared_libs: [
-                "vendor.qti.hardware.vpp@1.1",
-                "vendor.qti.hardware.vpp@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.memory.pasrmanager@1.0",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.memory.pasrmanager@1.1",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.qti.memory.pasrmanager@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.qti.memory.pasrmanager@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
                 "libcutils",
                 "libc++",
                 "libc",
@@ -2851,24 +1554,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpn557_fw",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libpn557_fw.so",
             ],
         },
     },
@@ -8598,6 +7283,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.capabilityconfigstore@1.0-impl",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libxml2",
+                "vendor.qti.hardware.capabilityconfigstore@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.fm@1.0-impl",
     owner: "lge",
     strip: {
@@ -8755,6 +7473,46 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "vendor.qti.hardware.soter@1.0",
                 "libQSEEComAPI",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vulkan.adreno",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vulkan.adreno.so",
+            ],
+            shared_libs: [
+                "libadreno_utils",
+                "libgsl",
+                "libz",
+                "liblog",
+                "libllvm-glnext",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "vendor.qti.hardware.display.mapper@2.0",
+                "android.hardware.graphics.mapper@2.0",
+                "vendor.qti.hardware.display.mapper@3.0",
+                "android.hardware.graphics.mapper@3.0",
+                "vendor.qti.hardware.display.mapperextensions@1.1",
+                "libhidlbase",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -9736,6 +8494,37 @@ cc_prebuilt_library_shared {
                 "libadsprpc",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadsprpc",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadsprpc.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "vendor.qti.hardware.dsp@1.0",
+                "liblog",
+                "libc",
+                "libcutils",
+                "libion",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -10781,6 +9570,63 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcdsp_default_listener",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcdsp_default_listener.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcdsprpc",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcdsprpc.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "vendor.qti.hardware.dsp@1.0",
+                "liblog",
+                "libc",
+                "libcutils",
+                "libion",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libchilog",
     owner: "lge",
     strip: {
@@ -11580,6 +10426,60 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libfastcvdsp_stub",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfastcvdsp_stub.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfastcvopt",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfastcvopt.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libfastcvdsp_stub",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libfilm_emulation_hal",
     owner: "lge",
     strip: {
@@ -11937,6 +10837,31 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhta_hexagon_runtime",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhta_hexagon_runtime.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
                 "libc",
                 "libm",
                 "libdl",
@@ -12674,6 +11599,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmdsprpc",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmdsprpc.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "vendor.qti.hardware.dsp@1.0",
+                "liblog",
+                "libc",
+                "libcutils",
+                "libion",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libminkdescriptor",
     owner: "lge",
     strip: {
@@ -13318,7 +12274,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpn557_fw_64",
+    name: "libpn557_fw",
     owner: "lge",
     strip: {
         none: true,
@@ -13326,7 +12282,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libpn557_fw_64.so",
+                "proprietary/vendor/lib64/libpn557_fw.so",
             ],
         },
     },
@@ -14451,6 +13407,168 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libscveCommon",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libscveCommon.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libscveCommon_stub",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libscveCommon_stub",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libscveCommon_stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libscveObjectSegmentation",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libscveObjectSegmentation.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libfastcvopt",
+                "libscveCommon",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libscveObjectSegmentation_stub",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libscveObjectSegmentation_stub.so",
+            ],
+            shared_libs: [
+                "libscveCommon",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libscveObjectTracker",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libscveObjectTracker.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libfastcvopt",
+                "libscveCommon",
+                "libscveObjectSegmentation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libscveObjectTracker_stub",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libscveObjectTracker_stub.so",
+            ],
+            shared_libs: [
+                "libfastcvopt",
+                "liblog",
+                "libscveCommon",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsdm-color",
     owner: "lge",
     strip: {
@@ -14584,6 +13702,37 @@ cc_prebuilt_library_shared {
                 "libdisplayskuutils",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdsprpc",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdsprpc.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "vendor.qti.hardware.dsp@1.0",
+                "liblog",
+                "libc",
+                "libcutils",
+                "libion",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -15159,6 +14308,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsysmon_cdsp_skel",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsysmon_cdsp_skel.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsystem_health_mon",
     owner: "lge",
     strip: {
@@ -15172,6 +14346,32 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libthermalclient",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libthermalclient.so",
+            ],
+            shared_libs: [
+                "libcutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -15200,6 +14400,32 @@ cc_prebuilt_library_shared {
                 "libos",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtime_genoff",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtime_genoff.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libcutils",
+                "liblog",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -15304,6 +14530,131 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvppclient",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvppclient.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libhwbinder",
+                "libutils",
+                "libhardware",
+                "vendor.qti.hardware.vpp@1.1",
+                "vendor.qti.hardware.vpp@1.2",
+                "vendor.qti.hardware.vpp@1.3",
+                "libvpplibrary",
+                "libcutils",
+                "libqdMetaData",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpphcp",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvpphcp.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpphvx",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvpphvx.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpplibrary",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvpplibrary.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "vendor.qti.hardware.capabilityconfigstore@1.0",
+                "libcutils",
+                "liblog",
+                "libqdMetaData",
+                "libion",
+                "libvpphvx",
+                "libcdsprpc",
+                "libvpphcp",
+                "libC2D2",
                 "libc++",
                 "libc",
                 "libm",
@@ -17446,6 +16797,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.dsp@1.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.embmssl@1.0",
     owner: "lge",
     strip: {
@@ -18670,6 +18049,93 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.vpp@1.1",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.vpp@1.2",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.vpp@1.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.vpp@1.3",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.vpp@1.1",
+                "vendor.qti.hardware.vpp@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.ims.callcapability@1.0",
     owner: "lge",
     strip: {
@@ -19004,6 +18470,63 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.qti.latency@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.memory.pasrmanager@1.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.memory.pasrmanager@1.1",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.memory.pasrmanager@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -19489,100 +19012,6 @@ prebuilt_rfsa {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdiag_system",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libdiag_system.so",
-            ],
-            shared_libs: [
-                "vendor.qti.diaghal@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libc",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libdiag_system.so",
-            ],
-            shared_libs: [
-                "vendor.qti.diaghal@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libc",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.diaghal@1.0",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.dpm.api@1.0",
     owner: "lge",
     strip: {
@@ -19628,6 +19057,38 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdiag_system",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libdiag_system.so",
+            ],
+            shared_libs: [
+                "vendor.qti.diaghal@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "libc",
+                "libcutils",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -19893,6 +19354,34 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libmmosal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.diaghal@1.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",

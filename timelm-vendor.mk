@@ -222,47 +222,18 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vulkan.adreno \
     libC2D2 \
     libCB \
     libOpenCL \
     libVkLayer_q3dtools \
     libadreno_utils \
-    libadsprpc \
     libc2d30_bltlib \
-    libcdsp_default_listener \
-    libcdsprpc \
     libdiag \
-    libfastcvdsp_stub \
-    libfastcvopt \
     libgpudataproducer \
     libgsl \
-    libhta_hexagon_runtime \
     libllvm-glnext \
     libllvm-qcom \
-    libmdsprpc \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdsprpc \
-    libsysmon_cdsp_skel \
-    libthermalclient \
-    libtime_genoff \
-    libvppclient \
-    libvpphcp \
-    libvpphvx \
-    libvpplibrary \
     libxml \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.memory.pasrmanager@1.0 \
-    vendor.qti.memory.pasrmanager@1.1 \
     btaudio_offload_if \
     audio.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -290,7 +261,6 @@ PRODUCT_PACKAGES += \
     libhdmipassthru \
     liblistensoundmodel2 \
     libmulawdec \
-    libpn557_fw \
     libqcodec2_base \
     libqcodec2_basecodec \
     libqcodec2_core \
@@ -487,11 +457,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    vulkan.adreno \
     lgdatavendorlib \
     lge_qcci_data \
     lib-imscmservice \
@@ -524,6 +496,7 @@ PRODUCT_PACKAGES += \
     libSecureUILib \
     libStDrvInt \
     libadsp_default_listener \
+    libadsprpc \
     libaoa \
     libarcsoft_beauty_picselfie \
     libarcsoft_dualcam_portraitlighting \
@@ -561,6 +534,8 @@ PRODUCT_PACKAGES += \
     libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
+    libcdsp_default_listener \
+    libcdsprpc \
     libchilog \
     libcne \
     libcneapiclient \
@@ -588,6 +563,8 @@ PRODUCT_PACKAGES += \
     libeepromcutter \
     libembmsservice \
     libets_teeclient_v2 \
+    libfastcvdsp_stub \
+    libfastcvopt \
     libfilm_emulation_hal \
     libgdtap \
     libgeofencing \
@@ -601,6 +578,7 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhexagon_nn_stub \
+    libhta_hexagon_runtime \
     libidl \
     libimagerwrapper \
     libipebpsstriping \
@@ -626,6 +604,7 @@ PRODUCT_PACKAGES += \
     liblqe \
     libmdmdetect \
     libmdmimgload \
+    libmdsprpc \
     libminkdescriptor \
     libminksocket \
     libmmcamera_faceproc \
@@ -649,7 +628,7 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libpn557_fw_64 \
+    libpn557_fw \
     libqcbor \
     libqcc_file_agent \
     libqcci_legacy \
@@ -685,11 +664,18 @@ PRODUCT_PACKAGES += \
     librilqmiservices \
     librmp \
     librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
+    libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
@@ -710,12 +696,19 @@ PRODUCT_PACKAGES += \
     libswregistrationalgo \
     libsymphony-cpu \
     libsynx \
+    libsysmon_cdsp_skel \
     libsystem_health_mon \
+    libthermalclient \
     libthreadutils \
+    libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
     libuicc_vendor \
+    libvppclient \
+    libvpphcp \
+    libvpphvx \
+    libvpplibrary \
     libvss_common_idl \
     libvss_common_iface \
     libvss_dmi_qcci \
@@ -785,6 +778,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.embmssl@1.0 \
     vendor.qti.hardware.embmssl@1.1 \
     vendor.qti.hardware.fm@1.0_vendor \
@@ -826,6 +820,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
@@ -838,6 +835,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     vendor_lib_rfsa_adsp_AlacDecoderModule_so_1 \
     vendor_lib_rfsa_adsp_ApeDecoderModule_so_1 \
     vendor_lib_rfsa_adsp_AudioContextDetection_so_1 \
@@ -890,10 +889,9 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_mmecns_module_so_1 \
     vendor_lib_rfsa_adsp_sm_fluence_sb_module_so_1 \
     vendor_lib_rfsa_adsp_smecns_v2_module_fv9_so_1 \
-    libdiag_system \
-    vendor.qti.diaghal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
+    libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
@@ -903,6 +901,7 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni \
     libmmosal \
     libmmparser_lite \
+    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     CneApp \
