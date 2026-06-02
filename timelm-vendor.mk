@@ -261,6 +261,7 @@ PRODUCT_PACKAGES += \
     libhdmipassthru \
     liblistensoundmodel2 \
     libmulawdec \
+    libpn557_fw \
     libqcodec2_base \
     libqcodec2_basecodec \
     libqcodec2_core \
@@ -628,7 +629,7 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libpn557_fw \
+    libpn557_fw_64 \
     libqcbor \
     libqcc_file_agent \
     libqcci_legacy \

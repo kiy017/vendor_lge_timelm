@@ -1563,6 +1563,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpn557_fw",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpn557_fw.so",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqcodec2_base",
     owner: "lge",
     strip: {
@@ -12274,7 +12292,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpn557_fw",
+    name: "libpn557_fw_64",
     owner: "lge",
     strip: {
         none: true,
@@ -12282,7 +12300,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libpn557_fw.so",
+                "proprietary/vendor/lib64/libpn557_fw_64.so",
             ],
         },
     },
