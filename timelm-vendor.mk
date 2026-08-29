@@ -7,15 +7,19 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/camera_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera_config.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.camerasolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.camerasolution.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-camera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-camera.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -30,6 +34,20 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     vendor/lge/timelm/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/lge/timelm/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/0_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/0_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/1_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/1_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/2_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/2_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/3_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/3_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/4_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/4_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/5_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/5_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/6_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/6_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/7_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/7_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/8_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/8_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/9_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/9_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/10_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/10_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/iqm/ai_checker_graph.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/ai_checker_graph.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/iqm/fc4_awb.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/fc4_awb.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/iqm/gender_detection_graph.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/gender_detection_graph.dlc \
     vendor/lge/timelm/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/lge/timelm/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/lge/timelm/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
@@ -996,7 +1014,56 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent \
-    dpmd
+    dpmd \
+    LgeResourcesPort \
+    LGCameraAppPort \
+    LGCameraSolutionPort \
+    com.lge.camerasolution \
+    lge-camera-compat
+
+PRODUCT_BOOT_JARS += \
+    lge-camera-compat
+
+PRODUCT_PACKAGES += \
+    libAutoContrast_system_ext \
+    libLGCameraSolution-jni_system_ext \
+    libOpenCL_system_ext \
+    libSNPE_G_system_ext \
+    libSRIyuv_system_ext \
+    libarcsoft_beauty_picselfie_system_ext \
+    libarcsoft_dualcam_portraitlighting_system_ext \
+    libarcsoft_dualcam_refocus_front_system_ext \
+    libarcsoft_dualcam_refocus_rear_t_system_ext \
+    libarcsoft_dualcam_refocus_system_ext \
+    libarcsoft_makeup_system_ext \
+    libarcsoft_picselfie_algorithm_system_ext \
+    libarcsoft_singlecam_portrait_lighting_system_ext \
+    libc++_shared_system_ext \
+    libcvp2_hfi_system_ext \
+    libcvp2_system_ext \
+    libcvp_common_system_ext \
+    libdepthmapdecoder.arcsoft_system_ext \
+    liblghdri_system_ext \
+    liblgsnpedeflickerclassifier_system_ext \
+    liblgsnpewsunet_system_ext \
+    libmorpho_deflicker_image_system_ext \
+    libmorpho_image_stab31_system_ext \
+    libmorpho_wdr2_system_ext \
+    libmpbase_system_ext \
+    com.lge.feature2.swmf_vendor \
+    com.qti.feature2.anchorsync_vendor \
+    com.qti.feature2.demux_vendor \
+    com.qti.feature2.frameselect_vendor \
+    com.qti.feature2.fusion_vendor \
+    com.qti.feature2.hdr_vendor \
+    com.qti.feature2.memcpy_vendor \
+    com.qti.feature2.mfsr_vendor \
+    com.qti.feature2.qcfa_vendor \
+    com.qti.feature2.rawhdr_vendor \
+    com.qti.feature2.rt_vendor \
+    com.qti.feature2.serializer_vendor \
+    com.qti.feature2.stub_vendor \
+    com.qti.feature2.swmf_vendor
 
 PRODUCT_PACKAGES += \
     vendor_firmware_wlan_qca_cld_bdwlan_elf \

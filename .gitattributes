@@ -1,0 +1,1 @@
+proprietary/system_ext/priv-app/lg_camera/prebuilt/LGCameraApp.apk filter=lfs diff=lfs merge=lfs -text
